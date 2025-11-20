@@ -1,0 +1,19 @@
+CC=gcc
+CFLAGS=-Wall -std=c11
+
+all: example1 example2 example3 example4
+
+example1: fork1.c
+	$(CC) $(CFLAGS) -o example1 fork1.c
+
+example2: fork2.c
+	$(CC) $(CFLAGS) -o example2 fork2.c
+
+example3: fork3.c
+	$(CC) $(CFLAGS) -o example3 fork3.c
+
+example4: fork4.c
+	$(CC) $(CFLAGS) -o example4 fork4.c
+
+clean:
+	rm -f example1 example2 example3 example4
